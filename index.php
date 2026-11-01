@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wedding Invitation</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Tangerine:wght@400;700&display=swap');
+</style>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<section class="cover-page">
+
+    <div class="overlay"></div>
+
+    <div class="cover-content">
+
+        <!-- TOP -->
+        <div class="top-text">
+
+            <p class="wedding-text">
+                THE WEDDING OF
+            </p>
+
+            <h1 style="font-family: Tangerine, cursive; font-size: 68px;">
+                Arabiah & Ilham
+            </h1>
+
+        </div>
+
+        <!-- BOTTOM -->
+        <div class="bottom-content">
+
+            <h2 style="font-size: 25px;">Dear:</h2>
+
+<p class="guest-name">
+
+<?= isset($_GET['to']) 
+? htmlspecialchars($_GET['to']) 
+: 'Bapak/Ibu/Saudara/i'; ?>
+
+</p>
+
+            <p class="desc" style="font-family: Shadows Into Light, cursive;">
+                Tanpa Mengurangi Rasa Hormat,
+                Kami Mengundang Bapak/Ibu/Saudara/i
+                Untuk Hadir di Acara Kami.
+            </p>
+
+            <a href="invitation.php">
+
+                <button class="open-btn">
+
+                    <span class="icon-circle">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                    </span>
+
+                    Buka Undangan
+
+                </button>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
